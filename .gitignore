@@ -1,0 +1,12 @@
+﻿#visual studio
+.vs/
+*.user
+*.suo
+
+#build output folders
+bin/
+obj/
+
+#logs and database files
+*.log
+*.db
