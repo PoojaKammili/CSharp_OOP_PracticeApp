@@ -24,6 +24,18 @@ namespace OOP_Basics_CSharp.Services
             shapes.Add(shape);
             shape.CalculateArea();
         }
+        public void AddSquareArea()
+        {
+            var shape = new Square("square", 3);
+            shapes.Add(shape);
+            shape.CalculateArea();
+        }
+        public void AddTriangleArea()
+        {
+            var shape = new Traingle("triangle", 3);
+            shapes.Add(shape);
+            shape.CalculateArea();
+        }
 
         public void RemoveArea(string name)
         {
@@ -33,10 +45,19 @@ namespace OOP_Basics_CSharp.Services
         }
         public void DisplayAll()
         {
-            foreach (var shape in shapes)
+            if (shapes.Count == null) 
             {
-                shape.CalculateArea();
+                Console.WriteLine("List is empty"); 
             }
+            else 
+            {
+                foreach (var shape in shapes)
+                {
+                    shape.CalculateArea();
+                }
+            }
+                
+
         }
         
     }

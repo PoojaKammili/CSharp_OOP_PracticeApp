@@ -34,16 +34,24 @@ namespace OOP_Basics_CSharp
                         service.AddRectangleArea();
                         break;
                     case 3:
+                        //addsquare
+                        service.AddSquareArea();
+                        break;
+                    case 4:
+                        //addtriangle
+                        service.AddTriangleArea();
+                        break;
+                    case 5:
                         //removearea
                         Console.WriteLine("Enter the name of the shape you want to remove the area : ");
                         string name = Console.ReadLine();
                         service.RemoveArea(name);
                         break;
-                    case 4:
+                    case 6:
                         //display
                         service.DisplayAll();
                         break;
-                    case 5:
+                    case 7:
                         return;
                     default:
                         Console.WriteLine("error while choosing options!!.choose correct option!!");
